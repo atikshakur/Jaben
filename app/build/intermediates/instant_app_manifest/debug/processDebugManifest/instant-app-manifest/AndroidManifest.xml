@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jaben"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Include required permissions for Google Maps API to run. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.jaben.SendCodeAgainActivity" />
+        <activity android:name="com.example.jaben.DriverPaymentTypeActivity" />
+        <activity android:name="com.example.jaben.DontGetPasswordActivity" />
+        <activity android:name="com.example.jaben.PassengerRequestActivity" />
+        <activity android:name="com.example.jaben.PassengerProfileActivity" />
+        <activity android:name="com.example.jaben.DriverProfileActivity" />
+        <activity android:name="com.example.jaben.PoliciesActivity" />
+        <activity android:name="com.example.jaben.HelpActivity" />
+        <activity android:name="com.example.jaben.SettingsActivity" />
+        <activity android:name="com.example.jaben.GetDiscountsActivity" />
+        <activity android:name="com.example.jaben.PromotionsActivity" />
+        <activity android:name="com.example.jaben.NotificationActivity" />
+        <activity android:name="com.example.jaben.MainDriverHomeActivity" />
+        <activity android:name="com.example.jaben.DriverRegistrationActivity" />
+        <activity android:name="com.example.jaben.DriverRegistrationSelectVehicleActivity" />
+        <activity android:name="com.example.jaben.DriverRegistrationSelectCityActivity" />
+        <activity android:name="com.example.jaben.DriverLoginActivity" />
+        <activity android:name="com.example.jaben.SelectAccountTypeActivity" />
+        <activity android:name="com.example.jaben.SplashScreenActivity" />
+        <activity android:name="com.example.jaben.VerifiedActivity" />
+        <activity android:name="com.example.jaben.VerifyingNumberActivity" />
+        <activity android:name="com.example.jaben.SentActivity" />
+        <activity android:name="com.example.jaben.LocationPermissionSlideActivity" />
+        <activity android:name="com.example.jaben.WattingPageActivity" />
+        <activity android:name="com.example.jaben.SentCodeActivity" />
+        <activity android:name="com.example.jaben.EnterPhoneNumberActivity" />
+        <activity android:name="com.example.jaben.LogInWithPhoneNumberActivity" />
+        <activity android:name="com.example.jaben.RegistrationActivity" />
+        <activity android:name="com.example.jaben.GetStartedActivity" />
+        <activity android:name="com.example.jaben.MainHomeActivity" />
+        <activity android:name="com.example.jaben.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <!-- Needs to be explicitly declared on P+ -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

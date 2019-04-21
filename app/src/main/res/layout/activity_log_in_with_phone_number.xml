@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".LogInWithPhoneNumberActivity">
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="180dp"
+            android:layout_height="95dp"
+            android:src="@drawable/jaben_logo_final"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"/>
+
+
+
+        <Button
+            android:id="@+id/btn_log_with_phone_number"
+            android:layout_below="@id/img1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_round_red"
+            android:text="@string/log_with_phone_number"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_below="@id/btn_log_with_phone_number"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="112dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/main_img" />
+
+
+</RelativeLayout>

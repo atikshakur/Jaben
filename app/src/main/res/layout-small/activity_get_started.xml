@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".GetStartedActivity">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:src="@drawable/jaben_logo_final"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <EditText
+            android:id="@+id/etxt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="   Mobile Number"
+            android:textSize="7sp"
+            android:fontFamily="@font/source_sans_pro"
+            android:background="#ffffff"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/untitled_1"/>
+
+
+        <EditText
+            android:id="@+id/etxt_password"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="   ......"
+            android:background="#ffffff"
+            android:inputType="numberPassword"
+            android:drawableLeft="@drawable/lock"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_terms_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/source_sans_pro"
+            android:padding="1dp"
+            android:text="Show characters"
+            android:textColor="#C2C3C5"
+            android:textSize="7sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/xt_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="Forget your password"
+            android:fontFamily="@font/source_sans_pro"
+            android:textColor="#C2C3C5"
+            android:textStyle="bold"
+            android:textSize="7sp"
+            android:padding="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_log_in"
+            android:layout_width="30dp"
+            android:layout_height="10dp"
+            android:background="@drawable/button_round_red"
+            android:text="Log in"
+            android:fontFamily="@font/source_sans_pro"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="6sp"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="30dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button_round_lightblack"
+            android:text="Register"
+            android:fontFamily="@font/source_sans_pro"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="5sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_social_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Social Login"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:textColor="#D01A1E"
+        android:textSize="5sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

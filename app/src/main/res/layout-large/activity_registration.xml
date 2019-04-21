@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="15dp"
+            android:text="Registration"
+            android:fontFamily="@font/source_sans_pro"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:background="#D01A1E"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etxt_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:ems="10"
+                android:fontFamily="@font/source_sans_pro"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etxt_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="E-mail"
+                android:fontFamily="@font/source_sans_pro"
+                android:background="#ffffff"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etxt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="Mobile Number"
+                android:fontFamily="@font/source_sans_pro"
+                android:background="#ffffff"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etxt_dob"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="Date of birth"
+                android:fontFamily="@font/source_sans_pro"
+                android:background="#ffffff"
+                android:inputType="datetime" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etxt_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="Password"
+                android:fontFamily="@font/source_sans_pro"
+                android:background="#ffffff"
+                android:inputType="numberPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/check_service_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="  Service type"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:textColor="#8e8e8e"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                        <RadioButton
+                            android:id="@+id/radio_passenger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:text="Passenger"
+                            android:fontFamily="@font/source_sans_pro"
+                            android:textSize="22sp"
+                            android:textColor="#8e8e8e"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_driver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Driver"
+                            android:fontFamily="@font/source_sans_pro"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="10sp"
+                            android:textSize="22sp"
+                            android:textColor="#8e8e8e"/>
+
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By registering you agree to the Terms and Conditions and Privacy Policy"
+                android:fontFamily="@font/source_sans_pro"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:text="Register"
+                android:textSize="20sp"
+                android:fontFamily="@font/source_sans_pro"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_round_red"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

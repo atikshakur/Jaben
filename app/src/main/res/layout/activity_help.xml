@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <TextView
+        android:id="@+id/txt_faq"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:text="FAQ"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:textSize="22sp"
+        android:textColor="#11313A"
+        android:padding="12dp"/>
+
+    <View
+        android:id="@+id/view_faq"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_faq"
+        android:layout_height="5dp"
+        android:background="#F6F7F8" />
+
+    <TextView
+        android:id="@+id/txt_faq1"
+        android:layout_below="@id/view_faq"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:text="My product was damaged / lost during the derivery. What should I do? "
+        android:fontFamily="@font/source_sans_pro"
+        android:textSize="18sp"
+        android:textColor="#11313A"
+        android:padding="12dp"
+        android:drawableRight="@drawable/more_faq"/>
+
+    <View
+        android:id="@+id/view_faq2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_faq1"
+        android:layout_height="5dp"
+        android:background="#F6F7F8" />
+
+    <TextView
+        android:id="@+id/txt_faq2"
+        android:layout_below="@id/view_faq2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:text="Where is the Jaben Courier service available?"
+        android:fontFamily="@font/source_sans_pro"
+        android:textSize="18sp"
+        android:textColor="#11313A"
+        android:padding="12dp"
+        android:drawableRight="@drawable/more_faq"/>
+
+    <View
+        android:id="@+id/view_faq3"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_faq2"
+        android:layout_height="5dp"
+        android:background="#F6F7F8" />
+
+    <TextView
+        android:id="@+id/txt_faq3"
+        android:layout_below="@id/view_faq3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:text="I need some information on your service. How can I contact you?"
+        android:fontFamily="@font/source_sans_pro"
+        android:textSize="18sp"
+        android:textColor="#11313A"
+        android:padding="12dp"
+        android:drawableRight="@drawable/more_faq"/>
+
+    <View
+        android:id="@+id/view_faq4"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_faq3"
+        android:layout_height="5dp"
+        android:background="#F6F7F8" />
+
+    <TextView
+        android:id="@+id/txt_quetions"
+        android:layout_below="@id/view_faq4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:text="   See All Questions"
+        android:fontFamily="@font/source_sans_pro"
+        android:drawableRight="@drawable/more_faq"
+        android:textSize="17sp"
+        android:textColor="#11313A"
+        android:padding="12dp"
+        android:drawableLeft="@drawable/faq_quests" />
+
+    <View
+        android:id="@+id/view_faq5"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_quetions"
+        android:layout_height="10dp"
+        android:background="#F6F7F8" />
+
+    <TextView
+        android:id="@+id/txt_support"
+        android:layout_below="@id/view_faq5"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:text="Support"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:textSize="22sp"
+        android:textColor="#11313A"
+        android:padding="12dp" />
+
+    <View
+        android:id="@+id/view_faq6"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_support"
+        android:layout_height="5dp"
+        android:background="#F6F7F8" />
+
+    <TextView
+        android:id="@+id/txt_issues"
+        android:layout_below="@id/view_faq6"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:text="   See All Issues"
+        android:fontFamily="@font/source_sans_pro"
+        android:drawableRight="@drawable/more_faq"
+        android:textSize="17sp"
+        android:textColor="#11313A"
+        android:padding="12dp"
+        android:drawableLeft="@drawable/faq_issues" />
+
+</RelativeLayout>

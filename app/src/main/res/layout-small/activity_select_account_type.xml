@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectAccountTypeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:padding="3dp"
+            android:text="SELECT YOUR ACCOUNT TYPE"
+            android:fontFamily="@font/source_sans_pro"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:background="#D01A1E"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:src="@drawable/pasenger_image"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:gravity="center"
+                android:text="Passenger Account"
+                android:textColor="#000000"
+                android:textSize="8sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create passenger account and enjoy our exclusive services."
+                android:fontFamily="@font/source_sans_pro"
+                android:textSize="8sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn_passenger_lets_go"
+                android:layout_width="50dp"
+                android:layout_height="15dp"
+                android:background="@drawable/round_border_button"
+                android:text="Let's go"
+                android:textSize="8sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/source_sans_pro"
+                android:textAllCaps="false"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:src="@drawable/driver_image"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver Account"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:textColor="#000000"
+                android:textSize="8sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create driver account and enjoy our exclusive services."
+                android:fontFamily="@font/source_sans_pro"
+                android:textSize="8sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn_driver_lets_go"
+                android:layout_width="50dp"
+                android:layout_height="15dp"
+                android:background="@drawable/round_border_button"
+                android:text="Let's go"
+                android:textSize="8sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/source_sans_pro"
+                android:textAllCaps="false"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account??"
+                android:fontFamily="@font/source_sans_pro"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="Login"
+                android:textColor="@color/colorPrimary"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

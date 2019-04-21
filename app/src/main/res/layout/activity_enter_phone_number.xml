@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".EnterPhoneNumberActivity">
+
+    <TextView
+        android:id="@+id/etxt_enter_mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your mobile number"
+        android:fontFamily="@font/source_sans_pro"
+        android:textSize="20sp"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="49dp"
+            android:background="#EA0000"
+            android:padding="10dp"
+            android:text=" +88"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="48dp"
+            android:background="#FECACB"
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Tap Next to verify your account with Account Kit powered by Facebook. You don't need a Facebook account to use Account Kit. An SMS may be sent to verify your number. Message and data rates may apply. Learn how Facebook uses your info. "
+        android:fontFamily="@font/source_sans_pro"
+        android:textSize="15sp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="#787878"/>
+
+    <Button
+        android:id="@+id/btn_Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:padding="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_round_red"/>
+
+</LinearLayout>
